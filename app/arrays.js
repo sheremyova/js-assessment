@@ -6,12 +6,13 @@ exports.arraysAnswers = {
   },
 
   sum: function(arr) {
-    
+      return arr.reduce(function(a,b){
+        return a + b
+      }, 0);
   },
 
   remove: function(arr, item) {
-  
-
+   return result = arr.filter(x => x !== item);
   },
 
   removeWithoutCopy: function(arr, item) {
@@ -19,8 +20,7 @@ exports.arraysAnswers = {
   },
 
   append: function(arr, item) {
-    arr.push(item);
-    return arr;
+    return arr.concat(item);
   },
 
   truncate: function(arr) {
@@ -39,7 +39,7 @@ exports.arraysAnswers = {
   },
 
   concat: function(arr1, arr2) {
-    return result = arr1.concat(arr2);
+    console.log (arr1.concat(arr2));
   },
 
   insert: function(arr, item, index) {
