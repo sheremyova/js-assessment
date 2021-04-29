@@ -21,13 +21,18 @@ exports.arraysAnswers = {
   },
 
   removeWithoutCopy: function(arr, item) {
-    while (true) {
-      const i = arr.indexOf(item);
-      if (i === -1) {
-        break;}
+    let i = 0;
+    while ((i = arr.indexOf(item)) !== -1) {
       arr.splice(i, 1);
-    }
-    return arr;
+}
+return arr;
+  //   while (true) {
+  //     const i = arr.indexOf(item);
+  //     if (i === -1) {
+  //       break;}
+  //     arr.splice(i, 1);
+  //   }
+  //   return arr;
   },
 
   append: function(arr, item) {
