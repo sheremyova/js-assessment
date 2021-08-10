@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../learnjs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "learnjs"
+	}
+}
